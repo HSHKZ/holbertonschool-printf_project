@@ -1,5 +1,3 @@
-README.md
-
 # _printf Project
 
 This project is a custom implementation of the `printf` function in C, adhering to the Betty coding style and the constraints of the GNU89 standard.
@@ -9,6 +7,8 @@ This project is a custom implementation of the `printf` function in C, adhering 
 The `_printf` function supports the following conversion specifiers:
 - `%c`: Prints a single character.
 - `%s`: Prints a string of characters.
+- `%d`: Prints an integer in decimal format.
+- `%i`: Prints an integer in decimal format.
 - `%%`: Prints a percent sign.
 
 ## Files
@@ -16,6 +16,7 @@ The `_printf` function supports the following conversion specifiers:
 - `main.h`: Header file containing prototypes and include guards.
 - `_printf.c`: Implementation of the `_printf` function.
 - `_putchar.c`: Implementation of the `_putchar` function.
+- `print_numbers.c`: Implementation of functions for printing numbers.
 - `README.md`: Description of the project.
 
 ## Compilation
