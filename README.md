@@ -24,3 +24,5 @@ The `_printf` function supports the following conversion specifiers:
 To compile the project, use the following command:
 
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+
+## Man Printf
