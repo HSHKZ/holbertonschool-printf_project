@@ -24,3 +24,19 @@ The `_printf` function supports the following conversion specifiers:
 To compile the project, use the following command:
 
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+
+## Man page :page_facing_up: :
+
+To access the Man please follow these steps:
+### Use this command : 
+```
+sudo cp _printf.3 /usr/share/man/man3/`
+```
+### Then use 
+```
+sudo mandb
+```
+### You can then open the man with :smile:
+```
+man _printf
+```
