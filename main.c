@@ -8,9 +8,11 @@
  */
 int main(void)
 {
-
-	_printf("Hello, %s! You have %d new messages.\n", "Lucas", '5');
-        _printf("Character: %c, Percent sign: %%\n", 'M');
-        _printf("String: %s\n", NULL);
+	_printf("Character: %c\n", 'A');
+	_printf("String: %s\n", "Hello, World!");
+	_printf("Decimal: %d\n", 123);
+	_printf("Integer: %i\n", 456);
+	_printf("Percent sign: %%\n");
+	_printf("Negative number: %d\n", -789);
 	return (0);
 }	
