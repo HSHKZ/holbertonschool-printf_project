@@ -2,11 +2,14 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <unistd.h>
 
-int _putchar(char c);
 int _printf(const char *format, ...);
-int print_string(char *str);
-int print_char(char c);
-int print_number(int n);
+int _putchar(char c);
+int print_char(va_list args);
+int print_string(va_list args);
+int print_decimal(va_list args);
+int handle_specifier(char specifier, va_list args);
 
 #endif
+
