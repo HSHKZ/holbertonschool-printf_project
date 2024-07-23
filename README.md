@@ -38,6 +38,5 @@ sudo mandb
 ```
 ### You can then open the man with 
 ```
-
 man _printf
 ```
