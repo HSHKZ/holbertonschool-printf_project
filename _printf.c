@@ -39,7 +39,7 @@ int print_char(char c)
  *
  * Return: Number of characters printed (excluding the null)
  */
-int_printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list args;
 	const char *p;
