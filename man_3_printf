@@ -46,16 +46,7 @@ _printf("Percent sign: %%\n");
 .BR printf (3)
 
 .SH AUTHOR
-Written by [Your Name].
+Written by Matthis, Lucas and Raphael.
 
 .SH COPYRIGHT
 This is free software; see the source for copying conditions. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-installation du man
-
-sudo cp _printf.3 /usr/share/man/man3/
-sudo mandb
-
-consulter le man
-
-man _printf
