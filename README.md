@@ -25,8 +25,10 @@ To compile the project, use the following command:
 
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
-## :Man:
+## Man page
 
 To access the Man please follow these steps:
 use this command : 
-`sudo cp _printf.3 /usr/share/man/man3/`
+```
+sudo cp _printf.3 /usr/share/man/man3/`
+```
