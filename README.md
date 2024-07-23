@@ -28,7 +28,13 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 ## Man page
 
 To access the Man please follow these steps:
-use this command : 
+### use this command : 
 ```
 sudo cp _printf.3 /usr/share/man/man3/`
 ```
+### then use 
+```
+sudo mandb
+```
+### you can then open the man with 
+`man _printf`
