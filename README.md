@@ -25,7 +25,7 @@ To compile the project, use the following command:
 
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 
-## Man page
+## Man page :page_facing_up: :
 
 To access the Man please follow these steps:
 ### Use this command : 
