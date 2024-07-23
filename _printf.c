@@ -59,6 +59,8 @@ int _printf(const char *format, ...)
 				count += print_char(va_arg(args, int));
 			else if (*p == 's')
 				count += print_string(va_arg(args, char *));
+			else if (*p == 'd' || *p == 'i')
+				count += print_number(va_arg(args, int));
 			else if (*p == '%')
 				count += _putchar('%');
 			else
