@@ -15,4 +15,4 @@ int main(void)
 	_printf("Percent sign: %%\n");
 	_printf("Negative number: %d\n", -789);
 	return (0);
-}	
+}
