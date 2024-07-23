@@ -37,4 +37,7 @@ sudo cp _printf.3 /usr/share/man/man3/`
 sudo mandb
 ```
 ### You can then open the man with 
-`man _printf`
+```
+
+man _printf
+```
