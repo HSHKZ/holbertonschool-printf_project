@@ -13,6 +13,6 @@ int main(void)
 	_printf("Decimal: %d\n", "123");
 	_printf("Integer: %i\n", "456");
 	_printf("Percent sign: %%\n");
-	_printf("Negative number: %d\n", -"789");
+	_printf("Negative number: %d\n", "-789");
 	return (0);
 }
