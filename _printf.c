@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
-
-int handle_specifier(char specifier, va_list args);
+#include <stddef.h>
 
 /**
  * _printf - Produces output according to a format
@@ -12,6 +11,9 @@ int _printf(const char *format, ...)
 {
 	int i = 0, count = 0;
 	va_list args;
+
+	if (format == NULL)
+		return (-1);
 
 	va_start(args, format);
 

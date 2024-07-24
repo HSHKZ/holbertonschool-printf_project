@@ -1,31 +1,52 @@
 #include "main.h"
-#include <unistd.h>
+#include <limits.h>
+#include <stdarg.h>
 
 /**
- * print_number - Prints an integer to stdout
- * @n: Integer to print
- *
- * Return: Number of characters printed
+ * print_number - Recursively prints a number
+ * @n: Number to print
  */
-int print_number(int n)
+void print_number(int n, int *count)
 {
-	int count = 0;
-	unsigned int num;
+	if (n == INT_MIN)
+	{
+		_putchar('-');
+		_putchar('2');
+		print_number(147483648, count);
+		return;
+	}
 
 	if (n < 0)
 	{
-		count += _putchar('-');
-		num = -n;
+		_putchar('-');
+		n = -n;
+		(*count)++;
 	}
-	else
+
+	if (n / 10)
+		print_number(n / 10, count);
+
+	_putchar(n % 10 + '\0');
+	(*count)++;
+}
+
+/**
+ * print_decimal - Prints a decimal number
+ * @args: Arguments list
+ *
+ * Return: Number of characters printed
+ */
+int print_decimal(va_list args)
+{
+	int n = va_arg(args, int);
+	int count = 0;
+
+	if (n == 0)
 	{
-		num = n;
+		_putchar('0');
+		return (1);
 	}
 
-	if (num / 10)
-		count += print_number(num / 10);
-
-	count += _putchar((num % 10) + '\0');
-
+	print_number(n, &count);
 	return (count);
 }

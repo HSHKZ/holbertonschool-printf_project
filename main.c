@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 #include <stdio.h>
 
 int main(void)
@@ -10,8 +11,8 @@ int main(void)
     printf("Printed %d characters with _printf\n", count1);
     printf("Printed %d characters with printf\n\n", count2);
 
-    count1 = _printf("String:[%s]\n", "I am a string !");
-    count2 = printf("String:[%s]\n", "I am a string !");
+    count1 = _printf("String:[%s]\n", "Chaussuuuuuuures !");
+    count2 = printf("String:[%s]\n", "Chaussuuuuuuures !");
     printf("Printed %d characters with _printf\n", count1);
     printf("Printed %d characters with printf\n\n", count2);
 
@@ -27,6 +28,11 @@ int main(void)
 
     count1 = _printf("Percent:[%%]\n");
     count2 = printf("Percent:[%%]\n");
+    printf("Printed %d characters with _printf\n", count1);
+    printf("Printed %d characters with printf\n\n", count2);
+
+    count1 = _printf("INT_MIN:[%d]\n", INT_MIN);
+    count2 = printf("INT_MIN:[%d]\n", INT_MIN);
     printf("Printed %d characters with _printf\n", count1);
     printf("Printed %d characters with printf\n\n", count2);
 
