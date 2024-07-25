@@ -53,7 +53,7 @@ int handle_specifier(char specifier, va_list args)
 	else if (specifier == 's')
 		count += print_string(args);
 	else if (specifier == 'd' || specifier == 'i')
-		count += print_decimal(args);
+		count += print_int(args);
 	else if (specifier == '%')
 	{
 		_putchar('%');
@@ -68,4 +68,3 @@ int handle_specifier(char specifier, va_list args)
 
 	return (count);
 }
-
