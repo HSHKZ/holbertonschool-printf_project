@@ -24,11 +24,15 @@ The `_printf` function supports the following conversion specifiers:
 
 To install the function, just clone the repository:
 
+'''
 git clone https://github.com/lowbacc/holbertonschool-printf.git
+'''
 
 and compile the _printf function with this command:
 
+'''
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
+'''
 
 this command will compile all .c files in the current into an executable named printf.
 
@@ -41,6 +45,7 @@ this command will compile all .c files in the current into an executable named p
 
 Here are some examples of how to use the _printf function: 
 
+'''
 #include "main.h"
 
 int main(void)
@@ -73,6 +78,7 @@ int main(void)
 
     return (0);
 }
+'''
 
 ## Testing:
 
@@ -80,28 +86,45 @@ To test the _printf function, you can create a test file `main.c` and compile it
 Here is an example of how to compile it and run the test:
 
 1. Create a `main.c` file or change it and include your test cases.
-2. Compile the code with the following command: 'gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf'
-3. Run the compiled program with: './printf'
+2. Compile the code with the following command: 
 
-## Man page :page_facing_up:
+'''
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
+'''
 
-To access the Man please follow these steps:
+3. Run the compiled program with:
 
-### Use this command to install it: 
-```
-'sudo cp _printf.3 /usr/share/man/man3/'
-```
-### For activate the page use: 
-```
-'sudo mandb'
-```
-### You can then open the man with :smile:
-```
-'man _printf'
-``` 
+'''
+./printf
+'''
+
+
+
+## Manual Page
+
+To access the manual page,
+
+1.Use this command to install it:
+
+‘’’
+sudo cp _printf.3 /usr/share/man/man3/
+
+‘’’
+
+2.For activate the page use:
+
+‘’’
+mandb
+‘’’
+
+3.And for open it:
+
+‘’’
+man _printf.3
+‘’’
 
 ## AUTHORS
 
-- [@Matthis SKALSKI] (https://github.com/lowbacc)
-- [@Lucas NIEL] (https://github.com/HSHKZ)
-- [@Raphael MELNIQUE] (https://github.com/Raphaelnpl)
+[@Matthis SKALSKI] (https://github.com/lowbacc)
+[@Lucas NIEL] (https://github.com/HSHKZ)
+[@Raphael MELNIQUE] (https://github.com/Raphaelnpl)
