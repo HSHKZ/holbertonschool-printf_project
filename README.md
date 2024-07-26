@@ -37,7 +37,14 @@ this command will compile all .c files in the current into an executable named p
 - GCC compiler (version 4.8.4 or later).
 - Ubuntu 20.04 LTS or similar Unix-like operating system.
 
-## 
+## Testing:
+
+to test the _printf function, you can create a test file `main.c` and compile it along with the _printf implementation. Here is an example of how t compile it and run the test:
+
+1. Create a `main.c` file or change it and include your test cases.
+2. Compile the code with the following command: gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
+3. Run the compiled program with: ./printf
+
 ## Man page :page_facing_up:
 
 To access the Man please follow these steps:
