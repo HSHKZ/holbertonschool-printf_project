@@ -37,6 +37,7 @@ this command will compile all .c files in the current into an executable named p
 - GCC compiler (version 4.8.4 or later).
 - Ubuntu 20.04 LTS or similar Unix-like operating system.
 
+## 
 ## Man page :page_facing_up: :
 
 To access the Man please follow these steps:
@@ -44,14 +45,14 @@ To access the Man please follow these steps:
 ```
 sudo cp _printf.3 /usr/share/man/man3/`
 ```
-### Then use 
+### Then use: 
 ```
 sudo mandb
 ```
 ### You can then open the man with :smile:
 ```
 man _printf
-```
+``` 
 
 ## AUTHORS
 
