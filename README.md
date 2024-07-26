@@ -20,7 +20,7 @@ The `_printf` function supports the following conversion specifiers:
 - `README.md`: Description of the project.
 - `_printf.3`: File of the man for the function `_printf`. 
 
-## Compilation
+## Compilation/Installation
 
 To install the function, just clone the repository:
 
@@ -37,13 +37,49 @@ this command will compile all .c files in the current into an executable named p
 - GCC compiler (version 4.8.4 or later).
 - Ubuntu 20.04 LTS or similar Unix-like operating system.
 
+## Examples: 
+
+Here are some examples of how to use the _printf function: 
+
+#include "main.h"
+
+int main(void)
+{
+    int len;
+    int len2;
+
+    len = _printf("Character:[%c]\n", 'L');
+    len2 = printf("Character:[%c]\n", 'L');
+
+    len = _printf("String:[%s]\n", "Chaussuuuuuuures !");
+    len2 = printf("String:[%s]\n", "Chaussuuuuuuures !");
+
+    len = _printf("Integer:(%%d):[%d]\n", 123);
+    len2 = printf("Integer:(%%d):[%d]\n", 123);
+
+    len = _printf("Integer:(%%i):[%i]\n", 123);
+    len2 = printf("Integer:(%%i):[%i]\n", 123);
+
+    len = _printf("Negative:[%d]\n", -762534);
+    len2 = printf("Negative:[%d]\n", -762534);
+
+    len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
+
+    len = _printf("INT_MIN:[%d]\n", INT_MIN);
+    len2 = printf("INT_MIN:[%d]\n", INT_MIN);
+
+    return (0);
+}
+
 ## Testing:
 
-to test the _printf function, you can create a test file `main.c` and compile it along with the _printf implementation. Here is an example of how t compile it and run the test:
+To test the _printf function, you can create a test file `main.c` and compile it along with the _printf implementation.
+Here is an example of how to compile it and run the test:
 
 1. Create a `main.c` file or change it and include your test cases.
-2. Compile the code with the following command: gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
-3. Run the compiled program with: ./printf
+2. Compile the code with the following command: 'gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf'
+3. Run the compiled program with: './printf'
 
 ## Man page :page_facing_up:
 
@@ -51,15 +87,15 @@ To access the Man please follow these steps:
 
 ### Use this command to install it: 
 ```
-sudo cp _printf.3 /usr/share/man/man3/`
+'sudo cp _printf.3 /usr/share/man/man3/'
 ```
 ### For activate the page use: 
 ```
-sudo mandb
+'sudo mandb'
 ```
 ### You can then open the man with :smile:
 ```
-man _printf
+'man _printf'
 ``` 
 
 ## AUTHORS
