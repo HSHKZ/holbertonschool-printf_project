@@ -5,10 +5,9 @@ This project is a custom implementation of the `printf` function in C, adhering 
 ## Functionality
 
 The `_printf` function supports the following conversion specifiers:
-- `%c`: Prints a single character.
-- `%s`: Prints a string of characters.
-- `%d`: Prints an integer in decimal format.
-- `%i`: Prints an integer in decimal format.
+- `%c`: Print a character.
+- `%s`: Print a string.
+- `%d` or `%i`: Prints a signed decimal integer.
 - `%%`: Prints a percent sign.
 
 ## Files
