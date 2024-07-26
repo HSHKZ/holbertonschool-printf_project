@@ -24,15 +24,15 @@ The `_printf` function supports the following conversion specifiers:
 
 To install the function, just clone the repository:
 
-'''sh
+```sh
 git clone https://github.com/lowbacc/holbertonschool-printf.git
-'''
+```
 
 and compile the _printf function with this command:
 
-'''sh
+```sh
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
-'''
+```
 
 this command will compile all .c files in the current into an executable named printf
 
@@ -45,7 +45,7 @@ this command will compile all .c files in the current into an executable named p
 
 Here are some examples of how to use the _printf function: 
 
-'''sh
+```sh
 #include "main.h"
 
 int main(void)
@@ -78,7 +78,7 @@ int main(void)
 
     return (0);
 }
-'''
+```
 
 ## Testing:
 
@@ -88,15 +88,15 @@ Here is an example of how to compile it and run the test:
 1. Create a `main.c` file or change it and include your test cases.
 2. Compile the code with the following command: 
 
-'''sh
+```sh
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
-'''
+```
 
 3. Run the compiled program with:
 
-'''sh
+```sh
 ./printf
-'''
+```
 
 
 
@@ -106,22 +106,21 @@ To access the manual page,
 
 1.Use this command to install it:
 
-‘’’sh
+```sh
 sudo cp _printf.3 /usr/share/man/man3/
-
-‘’’
+```
 
 2.For activate the page use:
 
-‘’’sh
+```sh
 mandb
-‘’’
+```
 
 3.And for open it:
 
-‘’’sh
+```sh
 man _printf.3
-‘’’
+```
 
 ## AUTHORS
 
