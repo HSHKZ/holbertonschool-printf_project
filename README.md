@@ -1,6 +1,6 @@
 # _printf Project
 
-This project is a custom implementation of the `printf` function in C, adhering to the Betty coding style and the constraints of the GNU89 standard. It supports basic formats specifier for characters, strings and integer.
+This project is a custom implementation of the `printf` function in C, adhering to the Betty coding style and the constraints of the GNU89 standard. It supports basic format specifiers for characters, strings and integers.
 
 ## Functionality
 
