@@ -16,7 +16,9 @@ The `_printf` function supports the following conversion specifiers:
 - `_printf.c`: Implementation of the `_printf` function.
 - `_putchar.c`: Implementation of the `_putchar` function.
 - `print_numbers.c`: Implementation of functions for printing numbers.
+- `print_functions.c`: Implementation of functions for printing characters.
 - `README.md`: Description of the project.
+- `_printf.3`: File of the man for the function `_printf`. 
 
 ## Compilation
 
