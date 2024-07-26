@@ -30,7 +30,7 @@ void print_number(long int n, int *count)
  */
 int print_int(va_list args)
 {
-	long int n = va_arg(args, long int);
+	long int n = va_arg(args, int);
 	int count = 0;
 
 	if (n == 0)
