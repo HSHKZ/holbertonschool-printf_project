@@ -39,3 +39,9 @@ sudo mandb
 ```
 man _printf
 ```
+
+## AUTHORS
+
+- [@Matthis SKALSKI] (https://github.com/lowbacc)
+- [@Lucas NIEL] (https://github.com/HSHKZ)
+- [@Raphael MELNIQUE] (https://github.com/Raphaelnpl)
