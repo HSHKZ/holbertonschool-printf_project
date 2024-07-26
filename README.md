@@ -32,6 +32,11 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
 
 this command will compile all .c files in the current into an executable named printf.
 
+## Requirements
+
+- GCC compiler (version 4.8.4 or later)
+
+
 ## Man page :page_facing_up: :
 
 To access the Man please follow these steps:
