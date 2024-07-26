@@ -10,8 +10,5 @@
  */
 int _putchar(char c)
 {
-	if (c == '\0')
-		return (write(1, "", 1));
-	else
-		return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }

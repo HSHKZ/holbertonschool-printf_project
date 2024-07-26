@@ -10,7 +10,7 @@ int print_string(va_list args);
 int print_decimal(va_list args);
 int print_int(va_list args);
 int handle_specifier(char specifier, va_list args);
-void print_number(int n, int *count);
+void print_number(long int n, int *count);
 
 #endif
 

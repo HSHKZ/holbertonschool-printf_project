@@ -9,24 +9,45 @@
  */
 int main(void)
 {
+    int value_max_plus_1024;
+    int value_min_minus_1024;
+    int value_min_plus_1024;
+    int value_max_minus_1024;
+    int result_subtract;
+    int result_add;
 
-	_printf("Let's print a simple sentence.\n");
-	_printf("%c", 'S');
-	_printf("A char inside a sentence: %c. Did it work?\n", 'F');
-	_printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
-	_printf("%s", "This sentence is retrieved from va_args!\n");
-	_printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
-	_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
-	_printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
-	_printf("%%");
-	_printf("Should print a single percent sign: %%\n");
-	_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');
-	_printf("css%ccs%scscscs", 'T', "Test");
-	_printf(NULL);
-	_printf("%c", '\0');
-	_printf("%");
-	_printf("%!\n");
-	_printf("%K\n");
+    value_max_plus_1024 = INT_MAX - 1024;
+    value_min_minus_1024 = INT_MIN + 1024;
+    value_min_plus_1024 = INT_MIN + 1024;
+    value_max_minus_1024 = INT_MAX - 1024;
+    result_subtract = 1024 - 2048;
+    result_add = INT_MIN + INT_MAX;
 
-	return (0);
+    _printf("%c", '\0');
+    _printf("%d\n", 1024);
+    _printf("%d\n", -1024);
+    _printf("%d\n", 0);
+    _printf("%d\n", INT_MAX);
+    _printf("%d\n", INT_MIN);
+    _printf("%d\n", value_max_plus_1024);
+    _printf("%d\n", value_min_minus_1024);
+    _printf("There is %d bytes in %d KB\n", 1024, 1);
+    _printf("%d - %d = %d\n", 1024, 2048, result_subtract);
+    _printf("%d + %d = %d\n", INT_MIN, INT_MAX, result_add);
+    _printf("%i\n", 1024);
+    _printf("%i\n", -1024);
+    _printf("%i\n", 0);
+    _printf("%i\n", INT_MAX);
+    _printf("%i\n", INT_MIN);
+    _printf("%i\n", value_max_minus_1024);
+    _printf("%i\n", value_min_plus_1024);
+    _printf("There is %i bytes in %i KB\n", 1024, 1);
+    _printf("%i - %i = %i\n", 1024, 2048, result_subtract);
+    _printf("%i + %i = %i\n", INT_MIN, INT_MAX, result_add);
+    _printf("%d == %i\n", 1024, 1024);
+    _printf("iddi%diddiiddi\n", 1024);
+    _printf("%d\n", 10000);
+    _printf("%i\n", 10000);
+
+    return (0);
 }

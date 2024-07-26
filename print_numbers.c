@@ -6,16 +6,8 @@
  * print_number - Recursively prints a number
  * @n: Number to print
  */
-void print_number(int n, int *count)
+void print_number(long int n, int *count)
 {
-	if (n == INT_MIN)
-	{
-		_putchar('-');
-		_putchar('2');
-		print_number(147483648, count);
-		return;
-	}
-
 	if (n < 0)
 	{
 		_putchar('-');
@@ -38,7 +30,7 @@ void print_number(int n, int *count)
  */
 int print_int(va_list args)
 {
-	int n = va_arg(args, int);
+	long int n = va_arg(args, long int);
 	int count = 0;
 
 	if (n == 0)
