@@ -5,53 +5,28 @@
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
-    int len;
-    int len2;
 
-    len = _printf("Let's try to printf a simple sentence.\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
+	_printf("Let's print a simple sentence.\n");
+	_printf("%c", 'S');
+	_printf("A char inside a sentence: %c. Did it work?\n", 'F');
+	_printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
+	_printf("%s", "This sentence is retrieved from va_args!\n");
+	_printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
+	_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	_printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+	_printf("%%");
+	_printf("Should print a single percent sign: %%\n");
+	_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');
+	_printf("css%ccs%scscscs", 'T', "Test");
+	_printf(NULL);
+	_printf("%c", '\0');
+	_printf("%");
+	_printf("%!\n");
+	_printf("%K\n");
 
-    len = _printf("Character:[%c]\n", 'M');
-    len2 = printf("Character:[%c]\n", 'M');
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    len = _printf("String:[%s]\n", "Chaussuuuuuuures !");
-    len2 = printf("String:[%s]\n", "Chaussuuuuuuures !");
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    len = _printf("Integer (%%d):[%d]\n", 123);
-    len2 = printf("Integer (%%d):[%d]\n", 123);
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    len = _printf("Integer (%%i):[%i]\n", 123);
-    len2 = printf("Integer (%%i):[%i]\n", 123);
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    len = _printf("Negative:[%d]\n", -762534);
-    len2 = printf("Negative:[%d]\n", -762534);
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    len = _printf("Percent:[%%]\n");
-    len2 = printf("Percent:[%%]\n");
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    len = _printf("INT_MIN:[%d]\n", INT_MIN);
-    len2 = printf("INT_MIN:[%d]\n", INT_MIN);
-    printf("Length of _printf: %d\n", len);
-    printf("Length of printf: %d\n\n", len2);
-
-    return (0);
+	return (0);
 }
-
