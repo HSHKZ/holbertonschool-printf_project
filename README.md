@@ -38,14 +38,15 @@ this command will compile all .c files in the current into an executable named p
 - Ubuntu 20.04 LTS or similar Unix-like operating system.
 
 ## 
-## Man page :page_facing_up: :
+## Man page :page_facing_up:
 
 To access the Man please follow these steps:
-### Use this command : 
+
+### Use this command to install it: 
 ```
 sudo cp _printf.3 /usr/share/man/man3/`
 ```
-### Then use: 
+### For activate the page use: 
 ```
 sudo mandb
 ```
