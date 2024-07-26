@@ -5,6 +5,7 @@
 /**
  * print_number - Recursively prints a number
  * @n: Number to print
+ * @count: Incrementation of the size
  */
 void print_number(long int n, int *count)
 {
