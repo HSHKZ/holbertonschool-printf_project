@@ -35,7 +35,7 @@ this command will compile all .c files in the current into an executable named p
 ## Requirements
 
 - GCC compiler (version 4.8.4 or later)
-
+- Ubuntu 20.04 LTS or similar Unix-like operating
 
 ## Man page :page_facing_up: :
 
