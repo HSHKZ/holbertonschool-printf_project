@@ -22,9 +22,15 @@ The `_printf` function supports the following conversion specifiers:
 
 ## Compilation
 
-To compile the project, use the following command:
+To install the function, just clone the repository:
 
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+git clone https://github.com/lowbacc/holbertonschool-printf.git
+
+and compile the _printf function with this command:
+
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
+
+this command will compile all .c files in the current into an executable named printf.
 
 ## Man page :page_facing_up: :
 
